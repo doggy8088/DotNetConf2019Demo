@@ -1,0 +1,114 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/SampleApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/SampleApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run basic scenario",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "--scenario",
+                "basic"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run db scenario",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "--scenario",
+                "db"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run dbcontext scenario",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "--scenario",
+                "dbcontext"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run liveness scenario",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "--scenario",
+                "liveness"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run writer scenario",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "--scenario",
+                "writer"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run port scenario",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run",
+                "${workspaceFolder}/SampleApp.csproj",
+                "--scenario",
+                "port"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
